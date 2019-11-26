@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,9 +10,14 @@
 <body>
 <form>
     <label>
-        Select your Company
+        Select your Company:
         <input type="text" name="Company" list="company">
     </label>
+    <datalist id="company">
+        <?php foreach ($company as $companies):?>
+        <option value="<?php echo $company?>"></option>
+        <?php endforeach ?>
+    </datalist>
 </form>
 </body>
 </html>
