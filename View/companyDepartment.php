@@ -8,15 +8,6 @@
     <title>Select Company/Department</title>
 </head>
 <body>
-<?php
-/*
-require '../Model/Connection.php';
-require '../Model/Company.php';
-require '../Model/CompanyLoader.php';
-$companyLoader = new CompanyLoader();
-$companies = $companyLoader->getCompanies();
-*/
-?>
 <form>
     <label>
         Select your Company:
