@@ -11,13 +11,15 @@
 <form>
     <label>
         Select your Company:
-        <input type="text" name="Company" list="company">
+<!--        <input type="select" name="Company" list="company">-->
+        <select name="company">
+            <option>Select your company</option>
+            <?php foreach ($companies as $company):?>
+                <option value="<?php echo $company->getName()?>"><?php echo $company->getName()?></option>
+            <?php endforeach ?>
+        </select>
     </label>
-    <datalist id="company">
-        <?php foreach ($company as $companies):?>
-        <option value="<?php echo $company?>"></option>
-        <?php endforeach ?>
-    </datalist>
+
 </form>
 </body>
 </html>
