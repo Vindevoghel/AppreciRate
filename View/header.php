@@ -24,6 +24,7 @@ $Progress = $_SESSION["Progress"];
              aria-valuemax="100">
         </div>
     </div>
+    <img class="m-4" src="/Assets/Img/Logo.jpg" alt="" width="72" height="72">
 </header>
 </body>
 </html>
