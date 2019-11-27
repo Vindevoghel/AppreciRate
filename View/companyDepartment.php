@@ -8,14 +8,21 @@
     <title>Select Company/Department</title>
 </head>
 <body>
+<?php
+require '../Model/Connection.php';
+require '../Model/Company.php';
+require '../Model/CompanyLoader.php';
+$companyLoader = new CompanyLoader();
+$companies = $companyLoader->getCompanies();
+?>
 <form>
     <label>
         Select your Company:
         <input type="text" name="Company" list="company">
     </label>
     <datalist id="company">
-        <?php foreach ($company as $companies):?>
-        <option value="<?php echo $company?>"></option>
+        <?php foreach ($companies as $company):?>
+        <option value="<?php echo $company->getName()?>"></option>
         <?php endforeach ?>
     </datalist>
 </form>
