@@ -1,17 +1,12 @@
 <?php
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <script>
+$rating = "";
+
+if (isset($_POST['submit'])) {
+    if (isset($_POST['radio'])) {
+        $rating = $_POST['radio'];  //
+        //echo "You have selected :".$_POST['radio'];  //  Displaying Selected Value
+    }
+}
 
 
-
-    </script>
-</body>
-</html>
