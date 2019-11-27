@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Assets/Css/Reset.css">
+    <link rel="stylesheet" href="Assets/Css/Icons.css">
+</head>
+<body>
+
+<!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+
+<!--    <input type="submit" name="rateOne" onclick="select()"><input type="submit" name="rateTwo" onclick="select()"><input type="submit" name="rateThree" onclick="select()"><input type="submit" name="rateFour" onclick="select()"><input type="submit" name="rateFive" onclick="select()">
+    <script></script>-->
+
+
+
+<div class="col-xs-4 col-sm-3 col-md-2 nopad text-center">
+    <label class="image-radio">
+        <img class="img-responsive" src="Assets/Img/icons/1.png" />
+        <input type="radio" name="image_radio" value="1" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+    </label>
+</div>
+<div class="col-xs-4 col-sm-3 col-md-2 nopad text-center">
+    <label class="image-radio">
+        <img class="img-responsive" src="Assets/Img/icons/2.png" />
+        <input type="radio" name="image_radio" value="2" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+    </label>
+</div>
+<div class="col-xs-4 col-sm-3 col-md-2 nopad text-center">
+    <label class="image-radio">
+        <img class="img-responsive" src="Assets/Img/icons/3.png" />
+        <input type="radio" name="image_radio" value="3" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+    </label>
+</div>
+<div class="col-xs-4 col-sm-3 col-md-2 nopad text-center">
+    <label class="image-radio">
+        <img class="img-responsive" src="Assets/Img/icons/4.png" />
+        <input type="radio" name="image_radio" value="4" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+    </label>
+</div>
+<div class="col-xs-4 col-sm-3 col-md-2 nopad text-center">
+    <label class="image-radio">
+        <img class="img-responsive" src="Assets/Img/icons/5.png" />
+        <input type="radio" name="image_radio" value="5" />
+        <i class="glyphicon glyphicon-ok hidden"></i>
+    </label>
+</div>
+
+<script>
+    $(document).ready(function(){
+        // add/remove checked class
+        $(".image-radio").each(function(){
+            if($(this).find('input[type="radio"]').first().attr("checked")){
+                $(this).addClass('image-radio-checked');
+            }else{
+                $(this).removeClass('image-radio-checked');
+            }
+        });
+
+        // sync the input state
+        $(".image-radio").on("click", function(e){
+            $(".image-radio").removeClass('image-radio-checked');
+            $(this).addClass('image-radio-checked');
+            var $radio = $(this).find('input[type="radio"]');
+            $radio.prop("checked",!$radio.prop("checked"));
+
+            e.preventDefault();
+        });
+    });
+</script>
+
+
+</body>
+</html>
