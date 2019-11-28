@@ -6,6 +6,7 @@ for(let company of listAllCompanies){
     console.log(company);
     company.addEventListener("click", function () {
         document.getElementById("department").style.visibility = "visible";
+        document.getElementById("submit").style.display = "none";
 
         var listAllDepartments = document.getElementsByClassName("department");
         console.log(listAllDepartments);
@@ -15,6 +16,9 @@ for(let company of listAllCompanies){
                 // why use display css property and not visibility property?
                 // because with visibility property doesn't work in a select box for some reason
                 department.style.display = "inline";
+                department.addEventListener("click", function () {
+                    document.getElementById("submit").style.display = "inline";
+                })
             }
             else{
                 department.style.display = "none";
