@@ -1,15 +1,17 @@
 <?php
 declare(strict_types=1);
 
-class Company
+class Department
 {
     private $id;
     private $name;
+    private $company;
 
-    function __construct($_id, $_name)
+    public function __construct($_id, $_name, $_company)
     {
         $this->id = $_id;
         $this->name = $_name;
+        $this->company = $_company;
     }
 
     /**
@@ -28,5 +30,11 @@ class Company
         return $this->name;
     }
 
-
+    /**
+     * @return mixed
+     */
+    public function getCompany()
+    {
+        return $this->company;
+    }
 }
