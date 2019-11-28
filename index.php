@@ -11,9 +11,8 @@ require 'Model/Department.php';
 require 'Model/DepartmentLoader.php';
 require 'Controller/CompanyDepartmentController.php';
 
-
-include "View/identification.php";
-
+$cont = new CompanyDepartmentController();
+$cont->render();
 ?>
 
 <!doctype html>
