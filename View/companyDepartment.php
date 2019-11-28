@@ -10,6 +10,7 @@
 <body>
 <form>
     <label>
+        Select your Company:
 <!--        <input type="select" name="Company" list="company">-->
         <select name="company" id="company">
             <option>Select your company</option>
