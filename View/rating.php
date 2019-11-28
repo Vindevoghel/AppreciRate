@@ -1,7 +1,6 @@
 <?php
 declare(strict_types=1);
 
-require  'identification.php';
 ?>
 
 
@@ -20,7 +19,7 @@ $_SESSION['Review rating'] = $rating;
 ?>
 
 <section>
-    <form method="post" action="">
+    <form method="post">
         <input type="submit" value="Confirm" name="Confirm">
     </form>
 </section>
@@ -35,7 +34,5 @@ if (isset($_POST['submit'])) {
 
     $rating->updateReviewField();
 
-
 }
-
 ?>

@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-/*if (!isset($_SESSION)) {
+if (!isset($_SESSION)) {
     session_start();
-}*/
+}
+
 require 'Model/Connection.php';
 require 'Model/Company.php';
 require 'Model/CompanyLoader.php';
 require 'Controller/CompanyDepartmentController.php';
-
-
-include "View/identification.php";
+require 'Controller/RatingController.php';
+require 'Controller/EndPageController.php';
 
 ?>
 
