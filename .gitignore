@@ -1,2 +1,4 @@
 .idea
-Model/Connection.php
+Model/Connection.php 
+rating.js
+.gitignore
