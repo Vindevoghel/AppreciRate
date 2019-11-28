@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 class Connection
 {
+    private $pdo;
+
     function openConnection()
     {
         $dbhost = "localhost";
@@ -16,4 +18,35 @@ class Connection
 
         return $pdo;
     }
+
+    public function updateTouristField($_columnName, $_newValue, $_condition)
+    {
+        $sql = 'UPDATE AppreciRate.Tourist SET ' . $_columnName . ' = ' . $_newValue . ' WHERE Company_id = ' . $_condition;
+        return $this->pdo->query($sql);
+    }
+
+    public function updateCompanyField($_columnName, $_newValue, $_condition)
+    {
+        $sql = 'UPDATE AppreciRate.Company SET ' . $_columnName . ' = ' . $_newValue . ' WHERE Company_id = ' . $_condition;
+        return $this->pdo->query($sql);
+    }
+
+    public function updateDepartmentField($_columnName, $_newValue, $_condition)
+    {
+        $sql = 'UPDATE AppreciRate.Department SET ' . $_columnName . ' = ' . $_newValue . ' WHERE Company_id = ' . $_condition;
+        return $this->pdo->query($sql);
+    }
+
+    public function updateEmployeesField($_columnName, $_newValue, $_condition)
+    {
+        $sql = 'UPDATE AppreciRate.Employees SET ' . $_columnName . ' = ' . $_newValue . ' WHERE Company_id = ' . $_condition;
+        return $this->pdo->query($sql);
+    }
+
+    public function updateReviewField($_columnName, $_newValue, $_condition)
+    {
+        $sql = 'UPDATE AppreciRate.Review SET ' . $_columnName . ' = ' . $_newValue . ' WHERE Company_id = ' . $_condition;
+        return $this->pdo->query($sql);
+    }
+    
 }
