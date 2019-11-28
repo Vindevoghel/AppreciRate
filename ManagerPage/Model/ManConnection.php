@@ -38,11 +38,11 @@ class ManConnection
 
         $stmt->execute();
 
-        $filelocation = 'assets/exports/';
-        $filename = 'export-' . date('Y-m-d H.i.s') . '.csv';
+        $filelocation = 'Assets/Exports/';
+        $filename = 'exporteddatabase.csv';
         $file_export = $filelocation . $filename;
 
-        $data = fopen($file_export, 'w');
+        $data = file_put_contents($file_export, 'wb+');
 
         $csv_fields = array();
 

@@ -11,6 +11,9 @@ class ManagerController
         // then the view will actually display them.
 
         //load the view
+        if(isset($_POST['getDatabase'])) {
+            $connection->getExcel();
+        }
 
 
         require 'View/Manager.php';
