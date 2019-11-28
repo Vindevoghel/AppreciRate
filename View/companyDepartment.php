@@ -10,6 +10,7 @@
 <body>
 <form>
     <label>
+        Select your Company:
 <!--        <input type="select" name="Company" list="company">-->
         <select name="company">
             <option>Select your company</option>
@@ -18,15 +19,7 @@
             <?php endforeach ?>
         </select>
     </label>
-    <label>
-        <select name="department" style="visibility: hidden"> <!-- need to add visibility in a css file-->
-            <option>Select your department</option>
-            <?php foreach ($department as $department):?>
-            <option value="<?php echo $department->getName()?>"><?php echo $department->getName() ?></option>
-            <?php endforeach;?>
-        </select>
-    </label>
-    <script src="../"></script>
+
 </form>
 </body>
 </html>
