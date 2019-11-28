@@ -14,11 +14,6 @@ class ManConnection
 
         $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
-        $dbconnect = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
-
-        if ($dbconnect->connect_error) {
-            die('Database connection failed: ' . $dbconnect->connect_error);
-        }
         $this->pdo = $pdo;
 
     }
