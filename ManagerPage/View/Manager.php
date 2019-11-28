@@ -60,4 +60,6 @@
         <?php endforeach; ?>
         </tbody>
     </table>
+
+    <button>Export Database</button>
 </div>
