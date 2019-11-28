@@ -3,7 +3,7 @@
 
 class DepartmentLoader
 {
-    public function getDepartment()
+    public function getDepartments()
     {
         $arrayDepartments = array();
         $connection = new Connection();
