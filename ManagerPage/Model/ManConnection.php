@@ -34,15 +34,13 @@ class ManConnection
                                           JOIN mydb.Employees ON Employees.id_Employees = Review.Employees_id_Employees
                                           JOIN mydb.Company ON Review.Company_Company_id = Company.Company_id
                                           JOIN mydb.Tourist ON Review.Tourist_id_Tourist = Tourist.id_Tourist';
-        $stmt = $this->pdo->prepare($sql);
-
-        $stmt->execute();
+        $stmt = $this->pdo->query($sql);
 
         $filelocation = 'Assets/Exports/';
-        $filename = 'exporteddatabase.csv';
+        $filename = 'export-'.date('Y-m-d H.i.s').'.csv';
         $file_export = $filelocation . $filename;
 
-        $data = file_put_contents($file_export, 'wb+');
+        $data = fopen($file_export, 'wb');
 
         $csv_fields = array();
 
