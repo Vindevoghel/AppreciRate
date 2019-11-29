@@ -36,10 +36,11 @@ class ManConnection
                                           JOIN mydb.Tourist ON Review.Tourist_id_Tourist = Tourist.id_Tourist';
         $stmt = $this->pdo->query($sql);
 
+        //Apache must have write permissions to this location
         $filelocation = 'Assets/Exports/';
+
         $filename = 'export-'.date('Y-m-d H.i.s').'.csv';
         $file_export = $filelocation . $filename;
-
         $data = fopen($file_export, 'wb');
 
         $csv_fields = array();
