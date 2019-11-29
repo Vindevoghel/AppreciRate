@@ -5,11 +5,8 @@ class RatingController {
 
     function render()
     {
-
-
-        require "../View/confirm.php";
+        require "../View/rating.php";
     }
-
 
 }
 
