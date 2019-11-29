@@ -2,6 +2,9 @@
 declare(strict_types=1);
 
 require 'header.php';
+require 'companyDepartment.php';
+
+$_SESSION["Progress"] = 80;
 ?>
 
 
@@ -15,11 +18,20 @@ if (isset($_POST['submit'])) {
     }
 }
 
-$_SESSION['Review rating'] = $rating;
-
+// $_SESSION['Review rating'] = $rating;
+$tourist = $_SESSION['Tourist Name'];
+$company = $_SESSION['Company'];
+$department = $_SESSION['Department'];
+$review = $_SESSION['Review'];
 ?>
 
 <section>
+    <h3><?php echo $company . ', ' . $department ?></h3>
+    <h3><?php echo $tourist ?><br></h3>
+    <fieldset>
+        <legend>Review:</legend>
+        <p><?php echo $review ?></p>
+    </fieldset>
     <form method="post">
         <input type="submit" value="Confirm" name="Confirm">
     </form>
@@ -28,13 +40,10 @@ $_SESSION['Review rating'] = $rating;
 <?php
 if (isset($_POST['submit'])) {
 
-    $tourist = $_SESSION["Tourist Name"];
     $tourist->updateTouristField();
-
-
-
-    // TODO... now also for the company, department, employees and review
-
+    $company->updateCompanyField();
+    $department->updateDepartmentField();
+    $review->updateDepartmentField();
     $rating->updateReviewField();
 
 }
