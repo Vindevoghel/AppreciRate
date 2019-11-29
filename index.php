@@ -11,7 +11,7 @@ require 'Model/Company.php';
 require 'Model/CompanyLoader.php';
 require 'Model/Department.php';
 require 'Model/DepartmentLoader.php';
-require 'Controller/EmployeeController';
+require 'Controller/EmployeeController.php';
 require 'Controller/CompanyDepartmentController.php';
 require 'Controller/RatingController.php';
 require 'Controller/EndPageController.php';
