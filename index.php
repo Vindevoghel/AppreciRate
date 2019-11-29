@@ -5,18 +5,19 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-
+require 'Model/Employee.php';
 require 'Model/Connection.php';
 require 'Model/Company.php';
 require 'Model/CompanyLoader.php';
 require 'Model/Department.php';
 require 'Model/DepartmentLoader.php';
+require 'Controller/EmployeeController';
 require 'Controller/CompanyDepartmentController.php';
 require 'Controller/RatingController.php';
 require 'Controller/EndPageController.php';
 require "Controller/IdentificationController.php";
 require "Controller/AboutController.php";
-require  "Controller/ReviewController.php";
+require "Controller/ReviewController.php";
 
 
 
