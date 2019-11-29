@@ -23,9 +23,12 @@ require 'Model/Company.php';
 require 'Model/CompanyLoader.php';
 require 'Model/Department.php';
 require 'Model/DepartmentLoader.php';
+require 'Model/Employee.php';
+require 'Model/EmployeeLoader.php';
 require 'Controller/CompanyDepartmentController.php';
 require 'Controller/RatingController.php';
 require 'Controller/EndPageController.php';
+require 'Controller/EmployeeController.php';
 
 ?>
 
@@ -50,5 +53,5 @@ require 'Controller/EndPageController.php';
 </head>
 <body class="text-center">
 </body>
-
 </html>
+

@@ -71,5 +71,5 @@ fabric.properties
 
 =======
 .idea
-Model/Connection.php
+Controller/Connection.php
 .gitignore
