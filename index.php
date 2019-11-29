@@ -14,6 +14,7 @@ require 'Model/EmployeeLoader.php';
 require 'Controller/CompanyDepartmentController.php';
 require 'Controller/RatingController.php';
 require 'Controller/EndPageController.php';
+require 'Controller/EmployeeController.php';
 
 ?>
 
