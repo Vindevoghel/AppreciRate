@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-if (!isset($_SESSION)) {
+/*if (!isset($_SESSION)) {
     session_start();
-}
+}*/
 require 'Model/Connection.php';
 require 'Model/Company.php';
 require 'Model/CompanyLoader.php';
@@ -12,6 +12,8 @@ require 'Model/DepartmentLoader.php';
 require 'Model/Employee.php';
 require 'Model/EmployeeLoader.php';
 require 'Controller/CompanyDepartmentController.php';
+require 'Controller/RatingController.php';
+require 'Controller/EndPageController.php';
 
 ?>
 
