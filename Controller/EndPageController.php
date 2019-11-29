@@ -5,6 +5,6 @@ class EndPageController
 {
     function render()
     {
-        require '../View/endPage.php';
+        require 'View/endPage.php';
     }
 }

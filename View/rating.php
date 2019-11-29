@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+require 'header.php';
 ?>
 
 
@@ -29,6 +30,8 @@ if (isset($_POST['submit'])) {
 
     $tourist = $_SESSION["Tourist Name"];
     $tourist->updateTouristField();
+
+
 
     // TODO... now also for the company, department, employees and review
 
