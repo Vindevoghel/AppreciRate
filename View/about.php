@@ -1,7 +1,4 @@
 <?php
-$test = $_SESSION["Tourist Name"];
-echo $test;
-var_dump($test);
 ?>
 
 
