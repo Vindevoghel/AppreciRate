@@ -8,7 +8,7 @@
     <title>Select Company/Department</title>
 </head>
 <body>
-<form>
+<form method="post">
     <label>
         Select your Company:
 <!--        <input type="select" name="Company" list="company">-->
@@ -27,7 +27,8 @@
             <?php endforeach;?>
         </select>
     </label>
-    <script src="../Assets/Js/showDepartment.js"></script>
+    <input id="submit" type="submit" value="submit" name="employee" style="display: none">
 </form>
+<script src="../Assets/Js/showDepartment.js"></script>
 </body>
 </html>
