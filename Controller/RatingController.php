@@ -6,8 +6,6 @@ class RatingController {
     function render()
     {
 
-
-        require "../View/confirm.php";
     }
 
 

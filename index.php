@@ -9,13 +9,13 @@ require 'Model/Company.php';
 require 'Model/CompanyLoader.php';
 require 'Model/Department.php';
 require 'Model/DepartmentLoader.php';
+require 'Model/Employee.php';
+require 'Model/EmployeeLoader.php';
 require 'Controller/CompanyDepartmentController.php';
 
-$cont = new CompanyDepartmentController();
-$cont->render();
 ?>
 
-<!doctype html>
+<!--<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,4 +35,4 @@ $cont->render();
 </head>
 <body class="text-center">
 </body>
-</html>
+</html>-->
