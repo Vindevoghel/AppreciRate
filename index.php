@@ -5,12 +5,13 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-require 'Model/Employee.php';
 require 'Model/Connection.php';
 require 'Model/Company.php';
 require 'Model/CompanyLoader.php';
 require 'Model/Department.php';
 require 'Model/DepartmentLoader.php';
+require 'Model/Employee.php';
+require 'Model/EmployeeLoader.php';
 require 'Controller/EmployeeController.php';
 require 'Controller/CompanyDepartmentController.php';
 require 'Controller/RatingController.php';
@@ -22,11 +23,11 @@ require "Controller/ReviewController.php";
 
 
 if ($_POST["Name"]){
-    $controller = new ReviewController();
+    $controller = new CompanyDepartmentController();
     $controller->render();
-}elseif($_POST["Comment"]){
-    $controller = new RatingController();
-    $controller->render();
+}elseif($_POST["employee"]){
+    $controller = new EmployeeController();
+    $controller->render($_POST["department"]);
 }elseif($_POST["Comapnypostvalue"]){
     $controller = new CompanyDepartmentController();
     $controller->render();
