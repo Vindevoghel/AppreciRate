@@ -16,42 +16,44 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <title>Manager Page</title>
 </head>
+<body>
+    <div class="container">
+        <div id="header">
+            <h1 class="jumbotron-heading">Reviews</h1>
+        </div>
+        <div id="exportdatabase">
+            <button>Export Database</button>
+        </div>
 
-<div class="container">
-    <div id="header">
-        <h1 class="jumbotron-heading">Reviews</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Review ID</th>
+                    <th>Tourist Name</th>
+                    <th>Employee Name</th>
+                    <th>Review Text</th>
+                    <th>Rating</th>
+                    <th>Company</th>
+                    <th>Dept Name</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <?php foreach ($connection->getReviews() as $row): ?>
+                <tr>
+                    <td><?php echo $row['id_Review'] ?></td>
+                    <td><?php echo $row['Tourist_Name'] ?></td>
+                    <td><?php echo $row['Employees-Name'] ?></td>
+                    <td><?php echo $row['Review_text'] ?></td>
+                    <td><?php echo $row['Review_Rating'] . '/5'?></td>
+                    <td><?php echo $row['Company_Name'] ?></td>
+                    <td><?php echo $row['Department_Name'] ?></td>
+                    <td><?php echo $row['Timestamp'] ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
     </div>
-    <div id="exportdatabase">
-        <button>Export Database</button>
-    </div>
-
-    <table>
-        <thead>
-        <tr>
-            <th>Review ID</th>
-            <th>Tourist Name</th>
-            <th>Employee Name</th>
-            <th>Review Text</th>
-            <th>Rating</th>
-            <th>Company</th>
-            <th>Dept Name</th>
-            <th>Timestamp</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <?php foreach ($connection->getReviews() as $row): ?>
-            <tr>
-                <td><?php echo $row['id_Review'] ?></td>
-                <td><?php echo $row['Tourist_Name'] ?></td>
-                <td><?php echo $row['Employees-Name'] ?></td>
-                <td><?php echo $row['Review_text'] ?></td>
-                <td><?php echo $row['Review_Rating'] . '/5'?></td>
-                <td><?php echo $row['Company_Name'] ?></td>
-                <td><?php echo $row['Department_Name'] ?></td>
-                <td><?php echo $row['Timestamp'] ?></td>
-            </tr>
-        <?php endforeach; ?>
-        </tbody>
-    </table>
-</div>
+</body>
+</html>
