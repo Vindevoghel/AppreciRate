@@ -7,6 +7,8 @@ class CompanyDepartmentController
     {
         $companyLoader = new CompanyLoader();
         $companies = $companyLoader->getCompanies();
+        $departmentLoader = new DepartmentLoader();
+        $departments = $departmentLoader->getDepartments();
         require "View/companyDepartment.php";
     }
 }

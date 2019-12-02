@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <title>Manager Page</title>
 </head>
+
 <div class="container">
     <h1 class="jumbotron-heading">Reviews</h1>
     <div id="exportdatabase">

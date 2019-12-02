@@ -1,28 +1,24 @@
+/*
+background-image:
+linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+url('https://mdn.mozillademos.org/files/7693/catfront.png');*/
 
 
-.image-radio {
-    cursor: pointer;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border: 4px solid transparent;
-    margin-bottom: 0;
-    outline: 0;
+.fieldlist input[type="radio"] {
+    float: right;
+    -webkit-appearance: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: url(images/radio.png) left center no-repeat;
+    background-size: 20px;
 }
-.image-radio input[type="radio"] {
-    display: none;
+
+.fieldlist input[type="radio"]:checked {
+    background: url(images/radio_checked.png) left center no-repeat;
 }
-.image-radio-checked {
-    border-color: #4783B0;
-}
-.image-radio .glyphicon {
-    position: absolute;
-    color: #4A79A3;
-    background-color: #fff;
-    padding: 10px;
-    top: 0;
-    right: 0;
-}
-.image-radio-checked .glyphicon {
-    display: block !important;
+
+
+#radiobutton {
+    visibility: hidden;
 }
