@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -18,13 +20,12 @@
 </head>
 
 <div class="container">
-    <div id="header">
-        <h1 class="jumbotron-heading">Reviews</h1>
-    </div>
+    <h1 class="jumbotron-heading">Reviews</h1>
     <div id="exportdatabase">
-        <button>Export Database</button>
+        <form method="post">
+            <button type="submit" name="getDatabase">Export Database</button>
+        </form>
     </div>
-
     <table>
         <thead>
         <tr>
