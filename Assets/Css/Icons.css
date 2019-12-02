@@ -1,24 +1,54 @@
-/*
-background-image:
-linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
-url('https://mdn.mozillademos.org/files/7693/catfront.png');*/
 
-
-.fieldlist input[type="radio"] {
-    float: right;
+.r_one {
+    background-image: url(../Img/icons/1.png);
+}
+.r_two {
+    background-image: url(../Img/icons/2.png);
+}
+.r_three {
+    background-image: url(../Img/icons/3.png);
+}
+.r_four {
+    background-image: url(../Img/icons/4.png);
+}
+.r_five {
+    background-image: url(../Img/icons/5.png);
+}
+.image_radio {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+}
+.radioBox input {
     -webkit-appearance: none;
-    border: none;
-    width: 25px;
-    height: 25px;
-    background: url(images/radio.png) left center no-repeat;
-    background-size: 20px;
+    -moz-appearance: none;
+    appearance: none;
 }
-
-.fieldlist input[type="radio"]:checked {
-    background: url(images/radio_checked.png) left center no-repeat;
+.radioBox input:active + .image_radio {
+    background-color: darkslategray;
 }
-
-
+.radioBox input:checked + .image_radio {
+    background-color: #3d8020;
+}
+.image_radio:hover {
+    -webkit-filter: brightness(1.4);
+    filter: brightness(1.4);
+    background-color: #ff8401;
+}
 #radiobutton {
     visibility: hidden;
+}
+fieldset {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 260px;
+    height: 150px;
 }
