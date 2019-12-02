@@ -1,9 +1,5 @@
 <?php
-session_start();
-
-$Input = $_POST['Name'];
 $_SESSION["Progress"] = 10;
-
 ?>
 
 <!doctype html>

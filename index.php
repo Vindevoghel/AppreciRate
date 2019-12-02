@@ -5,30 +5,43 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-$_SESSION["Tourist Name"] = $Input;
-
-include "Controller/IdentificationController.php";
-include "Controller/AboutController.php";
-
-if ($_POST["Name"]){
-    $controller = new AboutController();
-    $controller->render();
-}else{
-    $controller = new IdentificationController();
-    $controller->render();
-}
-
+require 'Model/Employee.php';
 require 'Model/Connection.php';
 require 'Model/Company.php';
 require 'Model/CompanyLoader.php';
 require 'Model/Department.php';
 require 'Model/DepartmentLoader.php';
-require 'Model/Employee.php';
-require 'Model/EmployeeLoader.php';
+require 'Controller/EmployeeController.php';
 require 'Controller/CompanyDepartmentController.php';
 require 'Controller/RatingController.php';
 require 'Controller/EndPageController.php';
-require 'Controller/EmployeeController.php';
+require "Controller/IdentificationController.php";
+require "Controller/AboutController.php";
+require "Controller/ReviewController.php";
+
+
+
+if ($_POST["Name"]){
+    $controller = new ReviewController();
+    $controller->render();
+}elseif($_POST["Comment"]){
+    $controller = new RatingController();
+    $controller->render();
+}elseif($_POST["Comapnypostvalue"]){
+    $controller = new CompanyDepartmentController();
+    $controller->render();
+}elseif($_POST["endpagevalue"]){
+    $controller = new EndPageController();
+    $controller->render();
+}elseif($_POST["aboutbuttonvalue"]){
+    $controller = new AboutController();
+    $controller->render();
+}
+else{
+$controller = new IdentificationController();
+$controller->render();
+}
+
 
 ?>
 
@@ -53,5 +66,5 @@ require 'Controller/EmployeeController.php';
 </head>
 <body class="text-center">
 </body>
-</html>
 
+</html>

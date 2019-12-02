@@ -1,14 +1,13 @@
 <?php
-session_start();
 
-$text = $_POST["text"];
-
-$_SESSION["review"] = $text;
+$_SESSION["Tourist Name"] = $_POST["Name"];
 $_SESSION["Progress"] = 40;
+
+var_dump($_SESSION);
 
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
