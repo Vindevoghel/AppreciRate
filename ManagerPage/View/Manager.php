@@ -31,6 +31,11 @@
 </head>
 <div class="container">
     <h1 class="jumbotron-heading">Reviews</h1>
+    <div id="exportdatabase">
+        <form method="post">
+            <button type="submit" name="getDatabase">Export Database</button>
+        </form>
+    </div>
     <table>
         <thead>
         <tr>
@@ -60,6 +65,4 @@
         <?php endforeach; ?>
         </tbody>
     </table>
-
-    <button>Export Database</button>
 </div>
