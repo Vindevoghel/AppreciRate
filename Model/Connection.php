@@ -8,9 +8,9 @@ class Connection
     function openConnection()
     {
         $dbhost = "localhost";
-        $dbuser = "jeroendv"; //username
-        $dbpass = "webontwerpen"; //pass of username
-        $db = "AppreciRate"; //schema or database name
+        $dbuser = "manny"; //username
+        $dbpass = "wachtwoord"; //pass of username
+        $db = "gab"; //schema or database name
 
         $pdo = new PDO('mysql:host=' . $dbhost . ';dbname='. $db, $dbuser, $dbpass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
