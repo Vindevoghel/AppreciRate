@@ -21,7 +21,6 @@ $_SESSION["Progress"] = 80;
     </div>
 </section>
     &nbsp;
-
 <?php
 if (isset($_POST['submit'])) {
     if (isset($_POST['image_radio'])) {
