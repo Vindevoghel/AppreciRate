@@ -2,7 +2,6 @@
 $_SESSION["Tourist Name"] = $_POST["Name"];
 $_SESSION["Progress"] = 30;
 
-var_dump($_SESSION);
 ?>
 
 

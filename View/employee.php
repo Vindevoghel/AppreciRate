@@ -1,7 +1,6 @@
 <?php $_SESSION["Company value"] = $_POST["company"];
 $_SESSION["Department value"] = $_POST["department"];
 $_SESSION["Progress"] = 50;
-var_dump($_SESSION);
 
 
 ?>

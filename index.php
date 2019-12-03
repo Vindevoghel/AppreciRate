@@ -36,14 +36,14 @@ if ($_POST["Name"]){
 }elseif($_POST["comment"]){
     $controller = new RatingController();
     $controller->render();
-}elseif($_POST["Companypostvalue"]){
-    $controller = new CompanyDepartmentController();
-    $controller->render();
-}elseif($_POST["endpagevalue"]){
+}elseif($_POST["Confirm"]){
     $controller = new EndPageController();
     $controller->render();
-}elseif($_POST["aboutbuttonvalue"]){
+}elseif($_POST["About"]){
     $controller = new AboutController();
+    $controller->render();
+}elseif($_POST["New Review"]){
+    $controller = new IdentificationController();
     $controller->render();
 }
 else{

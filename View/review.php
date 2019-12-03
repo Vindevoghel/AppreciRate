@@ -3,7 +3,6 @@
 $_SESSION["Employee Value"] = $_POST["Selectperson"];
 $_SESSION["Progress"] = 75;
 
-var_dump($_SESSION);
 
 ?>
 
