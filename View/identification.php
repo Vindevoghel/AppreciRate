@@ -4,6 +4,7 @@ $_SESSION["Progress"] = 10;
 
 <body class="fullscreen">
     <div class="container">
+
         <form class="form-signin" method="post">
             <?php include "View/header.php" ?>
             <h1 class="h3 mb-3 font-weight-normal">Feedback</h1>

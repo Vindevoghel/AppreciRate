@@ -1,7 +1,7 @@
 <?php
 
-$_SESSION["Tourist Name"] = $_POST["Name"];
-$_SESSION["Progress"] = 40;
+$_SESSION["Employee Value"] = $_POST["Selectperson"];
+$_SESSION["Progress"] = 80;
 
 var_dump($_SESSION);
 
@@ -15,7 +15,7 @@ var_dump($_SESSION);
             <label for="comment">text:</label>
 
             <div class="form-group">
-                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
             </div>
 
             <button type="submit">Submit</button>

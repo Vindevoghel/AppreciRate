@@ -6,4 +6,5 @@ class IdentificationController
     {
         require "View/identification.php";
     }
+
 }
