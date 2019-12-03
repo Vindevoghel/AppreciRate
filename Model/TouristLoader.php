@@ -10,5 +10,9 @@ class TouristLoader
         $sql = "INSERT INTO Tourist (Tourist_Name) VALUES ('" . $tourist->getName() . "')";
         $stmnt = $pdo->prepare($sql);
         $stmnt->execute();
+        $sqlnumber = $pdo->query("SELECT max(id_Tourist) FROM Tourist");
+        $arrayResult = $sqlnumber->fetch();
+        return $arrayResult[0];
+
     }
 }
