@@ -10,7 +10,7 @@ $_SESSION["Progress"] = 80;
     <div class="radioBox text-center">
         <input type="radio" name="image_radio" value="1" id="radioOne">
         <label class="image_radio r_one" for="radioOne"></label>
-        <input type="radio" nam e="image_radio" value="2" id="radioTwo">
+        <input type="radio" name="image_radio" value="2" id="radioTwo">
         <label class="image_radio r_two" for="radioTwo"></label>
         <input type="radio" name="image_radio" value="1" id="radioThree">
         <label class="image_radio r_three" for="radioThree"></label>
@@ -21,7 +21,6 @@ $_SESSION["Progress"] = 80;
     </div>
 </section>
     &nbsp;
-
 <?php
 if (isset($_POST['submit'])) {
     if (isset($_POST['image_radio'])) {
