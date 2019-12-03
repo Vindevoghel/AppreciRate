@@ -24,8 +24,6 @@ require "Controller/IdentificationController.php";
 require "Controller/AboutController.php";
 require "Controller/ReviewController.php";
 
-
-
 if ($_POST["Name"]){
     $controller = new CompanyDepartmentController();
     $controller->render();
@@ -49,8 +47,7 @@ if ($_POST["Name"]){
     $controller->render();
 }
 else{
-$controller = new IdentificationController();
-$controller->render();
+    $controller = new IdentificationController();
+    $controller->render();
 }
-
 ?>
