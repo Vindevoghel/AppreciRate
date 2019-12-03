@@ -24,8 +24,6 @@ require "Controller/IdentificationController.php";
 require "Controller/AboutController.php";
 require "Controller/ReviewController.php";
 
-
-
 if ($_POST["Name"]){
     $controller = new CompanyDepartmentController();
     $controller->render();
@@ -38,13 +36,18 @@ if ($_POST["Name"]){
 }elseif($_POST["comment"]){
     $controller = new RatingController();
     $controller->render();
+}elseif($_POST["Companypostvalue"]){
+    $controller = new CompanyDepartmentController();
+    $controller->render();
+}elseif($_POST["endpagevalue"]){
+    $controller = new EndPageController();
+    $controller->render();
 }elseif($_POST["aboutbuttonvalue"]){
     $controller = new AboutController();
     $controller->render();
 }
 else{
-$controller = new IdentificationController();
-$controller->render();
+    $controller = new IdentificationController();
+    $controller->render();
 }
-
 ?>
