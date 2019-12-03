@@ -19,9 +19,11 @@ var_dump($_SESSION);
 <form class="form-signin" method="post">
     <?php include "View/header.php" ?>
     <?php foreach ($employees as $employee): ?>
-        <label>
-            <input name="Selectperson" type="radio" value="<?php echo $employee->getId()?>"><?php echo $employee->getName();?>
-        </label>
+    <ul class="list-group pb-2">
+        <li class="list-group-item">
+            <input class="form-check-input" name="Selectperson" type="radio" value="<?php echo $employee->getId()?>"><?php echo $employee->getName();?>
+        </li>
+    </ul>
     <?php endforeach; ?>
     <div>
         <button type="submit">Continue</button>

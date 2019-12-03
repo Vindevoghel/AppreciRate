@@ -1,22 +1,3 @@
-/*body {
-    text-align: center;
-    !*background-color: #0058a4;*!
-    !*background-color: #f2942e;*!
-    !*background-color: #666666;*!
-    !*background-color: #009fe3;*!
-}*/
-
-
-
-
-/*.fullscreen {
-    display: flex;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}*/
-
 .container {
     margin: auto;
     text-align: center;
@@ -51,26 +32,9 @@ button {
     min-width: 10rem;
 }
 
-legend{
+legend {
     max-width: 80px;
 }
-
-#endsmiley {
-    box-shadow: -3px 2px 4px black;
-    border-radius: 50%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -94,7 +58,7 @@ legend{
     margin: auto;
 }
 
-body{
+body {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
