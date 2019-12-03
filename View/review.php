@@ -15,7 +15,7 @@ var_dump($_SESSION);
             <label for="comment">text:</label>
 
             <div class="form-group">
-                <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+                <textarea class="form-control" rows="5" id="comment" name="comment" maxlength="500"></textarea>
             </div>
 
             <button type="submit">Submit</button>
@@ -23,5 +23,3 @@ var_dump($_SESSION);
         </form>
     </div>
 </body>
-
-<!--button class="btn btn-lg btn-primary btn-block mt-3"-->
