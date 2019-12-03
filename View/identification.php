@@ -13,8 +13,3 @@ $_SESSION["Progress"] = 10;
         </form>
 
 </body>
-
-
-
-
-<!--button class="btn btn-lg btn-primary btn-block mt-3"-->

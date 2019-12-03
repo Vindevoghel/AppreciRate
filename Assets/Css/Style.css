@@ -55,20 +55,6 @@ legend{
     max-width: 80px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -97,4 +83,10 @@ body{
     align-items: center;
     padding-top: 150px;
     padding-bottom: 40px;
+}
+
+
+
+.form-check-input{
+
 }
