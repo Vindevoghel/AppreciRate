@@ -8,7 +8,9 @@
     <title>Select Company/Department</title>
 </head>
 <body>
+<?php include "View/header.php" ?>
 <form method="post">
+
     <label>
         Select your Company:
 <!--        <input type="select" name="Company" list="company">-->

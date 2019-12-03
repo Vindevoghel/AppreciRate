@@ -33,7 +33,7 @@ var_dump($_SESSION);
             <label for="comment">text:</label>
 
             <div class="form-group">
-                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
             </div>
 
             <button type="submit">Submit</button>

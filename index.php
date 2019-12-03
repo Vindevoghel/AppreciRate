@@ -28,11 +28,11 @@ if ($_POST["Name"]){
 }elseif($_POST["employee"]){
     $controller = new EmployeeController();
     $controller->render($_POST["department"]);
-}elseif($_POST["Comapnypostvalue"]){
-    $controller = new CompanyDepartmentController();
+}elseif($_POST["Selectperson"]){
+    $controller = new ReviewController();
     $controller->render();
-}elseif($_POST["endpagevalue"]){
-    $controller = new EndPageController();
+}elseif($_POST["comment"]){
+    $controller = new RatingController();
     $controller->render();
 }elseif($_POST["aboutbuttonvalue"]){
     $controller = new AboutController();
