@@ -1,19 +1,15 @@
 <?php
 declare(strict_types=1);
 
-require "header.php";
-
 $_SESSION["Progress"] = 100;
 ?>
 
-<form method="post">
+<form  class="form-signin" method="post">
+    <?php include "View/header.php"?>
     <img id="endsmiley" src="../Assets/Img/icons/ok.png" height="80"><br>
     <p>Thank you!</p>
-    <label>
-        <input type="submit" name="New Review" value="New Review">
-    </label>
 
-    <label>
-        <input type="submit" name="about" Value="About Us">
-    </label>
+    <button type="submit" name="New Review" value="New Review"> New Review </button>
+    <button type="submit" name="About"> About Us </button>
+
 </form>
