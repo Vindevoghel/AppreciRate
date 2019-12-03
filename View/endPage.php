@@ -7,7 +7,7 @@ $_SESSION["Progress"] = 100;
 ?>
 
 <form method="post">
-    <img src="../Assets/Img/icons/ok.png" height="80"><br>
+    <img id="endsmiley" src="../Assets/Img/icons/ok.png" height="80"><br>
     <p>Thank you!</p>
     <label>
         <input type="submit" name="New Review" value="New Review">

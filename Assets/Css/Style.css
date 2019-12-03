@@ -55,7 +55,10 @@ legend{
     max-width: 80px;
 }
 
-
+#endsmiley {
+    box-shadow: -3px 2px 4px black;
+    border-radius: 50%;
+}
 
 
 
