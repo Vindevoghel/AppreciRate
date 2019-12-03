@@ -1,6 +1,6 @@
 <?php $_SESSION["Company value"] = $_POST["company"];
 $_SESSION["Department value"] = $_POST["department"];
-
+$_SESSION["Progress"] = 50;
 var_dump($_SESSION);
 
 
@@ -16,11 +16,15 @@ var_dump($_SESSION);
     <title>Employee</title>
 </head>
 <body>
-<form method="post">
+<form class="form-signin" method="post">
+    <?php include "View/header.php" ?>
     <?php foreach ($employees as $employee): ?>
         <label>
             <input name="Selectperson" type="radio" value="<?php echo $employee->getId()?>"><?php echo $employee->getName();?>
         </label>
     <?php endforeach; ?>
-    <button type="submit">Continue</button>
+    <div>
+        <button type="submit">Continue</button>
+    </div>
+    <p class="mt-5 mb-3 text-muted">© BeCode 2019</p>
 </form>

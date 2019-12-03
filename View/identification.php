@@ -2,8 +2,7 @@
 $_SESSION["Progress"] = 10;
 ?>
 
-<body class="fullscreen">
-    <div class="container">
+<body class="text-center">
 
         <form class="form-signin" method="post">
             <?php include "View/header.php" ?>
@@ -12,7 +11,7 @@ $_SESSION["Progress"] = 10;
             <button type="submit">Continue</button>
             <p class="mt-5 mb-3 text-muted">© BeCode 2019</p>
         </form>
-    </div>
+
 </body>
 
 

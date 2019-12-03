@@ -49,6 +49,6 @@ fieldset {
     margin-top: 20px;
     border: 2px solid black;
     border-radius: 12px;
-    width: 260px;
-    height: 150px;
+    min-height: 50px;
+    padding: 20px;
 }
