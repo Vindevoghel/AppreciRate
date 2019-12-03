@@ -1,13 +1,14 @@
 <?php
 declare(strict_types=1);
 
+include "View/header.php";
 
 $_SESSION["Review text"] = $_POST["comment"];
 $_SESSION["Progress"] = 80;
 var_dump($_SESSION);
 ?>
-    <form class="form-signin" method="post">
-        <?php include "View/header.php" ?>
+
+
 <section>
     <div class="radioBox text-center">
         <input type="radio" name="image_radio" value="1" id="radioOne">
@@ -22,7 +23,7 @@ var_dump($_SESSION);
         <label class="image_radio r_five" for="radioFive"></label>
     </div>
 </section>
-    &nbsp;
+    &nbsp;&nbsp;
 <?php
 if (isset($_POST['submit'])) {
     if (isset($_POST['image_radio'])) {
@@ -39,7 +40,7 @@ $department = $_SESSION['Department value'];
 $review = $_SESSION['Review text'];
 ?>
 
-&nbsp;
+    &nbsp;&nbsp;
 <section>
     <h3><?php echo $company . ', ' . $department ?></h3>
     <h3><?php echo $tourist ?><br></h3>
@@ -47,7 +48,7 @@ $review = $_SESSION['Review text'];
         <legend>Review:</legend>
         <p><?php echo $review ?></p>
     </fieldset>
-
+    <form method="post">
         <button type="submit" value="Confirm" name="Confirm">Confirm</button>
     </form>
 </section>

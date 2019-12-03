@@ -35,7 +35,7 @@
     background-color: darkslategray;
 }
 .radioBox input:checked + .image_radio {
-    background-color: #3d8020;
+    background-color: #29a395;
 }
 .image_radio:hover {
     -webkit-filter: brightness(1.4);
