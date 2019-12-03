@@ -15,4 +15,13 @@ class CompanyLoader
         }
         return $arrayCompanies;
     }
+
+    public function getCompanyName($id)
+    {
+        $connection = new Connection();
+        $pdo = $connection->openConnection();
+        $stmnt = $pdo->query("SELECT Company_Name FROM Company WHERE Company_id = " . $id);
+        $result = $stmnt->fetch();
+        return $result[0];
+    }
 }

@@ -15,4 +15,13 @@ class DepartmentLoader
         }
         return $arrayDepartments;
     }
+
+    public function getDepartmentName($id)
+    {
+        $connection = new Connection();
+        $pdo = $connection->openConnection();
+        $stmnt = $pdo->query("SELECT Department_Name FROM Department WHERE id_Department = " . $id);
+        $result = $stmnt->fetch();
+        return $result[0];
+    }
 }
