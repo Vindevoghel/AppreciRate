@@ -1,3 +1,11 @@
+<?php $_SESSION["Company value"] = $_POST["company"];
+$_SESSION["Department value"] = $_POST["department"];
+
+var_dump($_SESSION);
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>

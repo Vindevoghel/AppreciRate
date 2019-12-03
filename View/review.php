@@ -1,7 +1,7 @@
 <?php
 
-$_SESSION["Tourist Name"] = $_POST["Name"];
-$_SESSION["Progress"] = 40;
+$_SESSION["Employee Value"] = $_POST["Selectperson"];
+$_SESSION["Progress"] = 80;
 
 var_dump($_SESSION);
 
