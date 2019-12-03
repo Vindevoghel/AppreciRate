@@ -28,7 +28,6 @@ $Progress = $_SESSION["Progress"];
 <body class="fullscreen text-center">
     <section>
         <div class="container">
-            <form class="text-center">
                 <header class="pt-5">
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: <?php echo $Progress ?>%;" aria-valuenow="5" aria-valuemin="0"
@@ -37,16 +36,7 @@ $Progress = $_SESSION["Progress"];
                     </div>
                     <img class="m-4" src="/Assets/Img/Logo.jpg" alt="" width="72" height="72">
                 </header>
-            </form>
         </div>
-        <header class="pt-5">
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: <?php echo $Progress ?>%;" aria-valuenow="5" aria-valuemin="0"
-                     aria-valuemax="100">
-                </div>
-            </div>
-        </header>
     </section>
 </body>
-
 </html>
