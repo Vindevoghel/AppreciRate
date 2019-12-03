@@ -1,13 +1,12 @@
 <?php
 declare(strict_types=1);
 
-include "View/header.php";
+include "header.php";
 
 $_SESSION["Review text"] = $_POST["comment"];
 $_SESSION["Progress"] = 80;
 var_dump($_SESSION);
 ?>
-
 
 <section>
     <div class="radioBox text-center">
@@ -40,10 +39,10 @@ $department = $_SESSION['Department value'];
 $review = $_SESSION['Review text'];
 ?>
 
-    &nbsp;&nbsp;
+    &nbsp;
 <section>
     <h3><?php echo $company . ', ' . $department ?></h3>
-    <h3><?php echo $tourist ?><br></h3>
+    <h3><?php echo $tourist ?>&nbsp;</h3>
     <fieldset>
         <legend>Review:</legend>
         <p><?php echo $review ?></p>
