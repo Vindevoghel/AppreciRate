@@ -1,3 +1,11 @@
+<?php $_SESSION["Company value"] = $_POST["company"];
+$_SESSION["Department value"] = $_POST["department"];
+
+var_dump($_SESSION);
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,9 +19,8 @@
 <form method="post">
     <?php foreach ($employees as $employee): ?>
         <label>
-            <input type="radio" value="<?php echo $employee->getId()?>"><?php echo $employee->getName();?>
+            <input name="Selectperson" type="radio" value="<?php echo $employee->getId()?>"><?php echo $employee->getName();?>
         </label>
     <?php endforeach; ?>
+    <button type="submit">Continue</button>
 </form>
-</body>
-</html>
