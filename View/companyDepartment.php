@@ -5,20 +5,8 @@ $_SESSION["Progress"] = 30;
 var_dump($_SESSION);
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Select Company/Department</title>
-</head>
-<body>
 <?php include "View/header.php" ?>
 <form method="post">
-
     <label>
         Select your Company:
 <!--        <input type="select" name="Company" list="company">-->
@@ -40,5 +28,3 @@ var_dump($_SESSION);
     <input id="submit" type="submit" value="submit" name="employee" style="display: none">
 </form>
 <script src="../Assets/Js/showDepartment.js"></script>
-</body>
-</html>

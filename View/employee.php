@@ -24,5 +24,3 @@ var_dump($_SESSION);
     <?php endforeach; ?>
     <button type="submit">Continue</button>
 </form>
-</body>
-</html>
