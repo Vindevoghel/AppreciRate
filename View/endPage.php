@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
 
+require "header.php";
+
+$_SESSION["Progress"] = 100;
 ?>
 
 <form method="post">
