@@ -1,7 +1,7 @@
 <?php
 
 $_SESSION["Employee Value"] = $_POST["Selectperson"];
-$_SESSION["Progress"] = 80;
+$_SESSION["Progress"] = 75;
 
 var_dump($_SESSION);
 
@@ -11,10 +11,9 @@ var_dump($_SESSION);
     <div class="container">
         <form class="form-signin" method="post">
             <?php include "header.php"?>
-            <h3>Observation Page!</h3>
-            <label for="comment">text:</label>
+            <h3>Feedback for this person</h3>
 
-            <div class="form-group">
+            <div class="form-group pt-3">
                 <textarea class="form-control" rows="5" id="comment" name="comment" maxlength="500"></textarea>
             </div>
 

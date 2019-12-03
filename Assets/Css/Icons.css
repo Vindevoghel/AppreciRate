@@ -32,15 +32,15 @@
     appearance: none;
 }
 .radioBox input:active + .image_radio {
-    background-color: darkslategray;
+    background-color: #c0323b;
 }
 .radioBox input:checked + .image_radio {
-    background-color: #3d8020;
+    background-color: #f9da18;
 }
 .image_radio:hover {
     -webkit-filter: brightness(1.4);
     filter: brightness(1.4);
-    background-color: #ff8401;
+    background-color: #29a395;
 }
 #radiobutton {
     visibility: hidden;
