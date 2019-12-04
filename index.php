@@ -20,11 +20,9 @@ require 'Controller/EmployeeController.php';
 require 'Controller/CompanyDepartmentController.php';
 require 'Controller/RatingController.php';
 require 'Controller/EndPageController.php';
-require "Controller/IdentificationController.php";
-require "Controller/AboutController.php";
-require "Controller/ReviewController.php";
-
-
+require 'Controller/IdentificationController.php';
+require 'Controller/AboutController.php';
+require 'Controller/ReviewController.php';
 
 if ($_POST["Name"]){
     $controller = new CompanyDepartmentController();
@@ -41,16 +39,18 @@ if ($_POST["Name"]){
 }elseif($_POST["Confirm"]){
     $controller = new EndPageController();
     $controller->render();
-}elseif($_POST["About"]){
+}elseif($_POST["New Review"]){
+    $controller = new IdentificationController();
+    $controller->render();
+}elseif($_POST["abt"]){
     $controller = new AboutController();
     $controller->render();
-}elseif($_POST["New Review"]){
+}elseif($_POST["home"]){
     $controller = new IdentificationController();
     $controller->render();
 }
 else{
-$controller = new IdentificationController();
-$controller->render();
+    $controller = new IdentificationController();
+    $controller->render();
 }
-
 ?>
