@@ -8,7 +8,7 @@ $_SESSION["Progress"] = 30;
 <form class="form-signin" method="post">
     <?php include "View/header.php" ?>
 
-        <select name="company" id="company" class="form-control">
+        <select name="company" id="company" class="form-control mb-3">
             <option>Select your company</option>
             <?php foreach ($companies as $company):?>
                 <option value="<?php echo $company->getId()?>" class="company"><?php echo $company->getName()?></option>

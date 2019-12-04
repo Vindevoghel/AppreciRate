@@ -1,13 +1,12 @@
 <?php
 declare(strict_types=1);
 
-include "header.php";
 
 $_SESSION["Review text"] = $_POST["comment"];
 $_SESSION["Progress"] = 80;
-var_dump($_SESSION);
 ?>
-
+    <form class="form-signin" method="post">
+        <?php include "View/header.php" ?>
 <section>
     <div class="radioBox text-center">
         <input type="radio" name="image_radio" value="1" id="radioOne">
@@ -47,7 +46,6 @@ $review = $_SESSION['Review text'];
         <legend>Review:</legend>
         <p><?php echo $review ?></p>
     </fieldset>
-    <form method="post">
         <button type="submit" value="Confirm" name="Confirm">Confirm</button>
     </form>
 </section>

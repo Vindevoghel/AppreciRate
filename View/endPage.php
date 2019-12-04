@@ -8,8 +8,8 @@ $_SESSION["Progress"] = 100;
     <?php include "View/header.php"?>
     <img id="endsmiley" src="../Assets/Img/icons/ok.png" height="80"><br>
     <p>Thank you!</p>
-
-    <button type="submit" name="New Review" value="New Review"> New Review </button>
-    <button type="submit" name="About"> About Us </button>
-
+    <input type="submit" class="form-control text-center mb-3 endpagebutton" placeholder="Please enter your name"
+           name="home" value="Home">
+    <input type="submit" class="form-control text-center endpagebutton" placeholder="Please enter your name" name="abt"
+           value="About Us">
 </form>
