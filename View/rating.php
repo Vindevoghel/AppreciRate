@@ -1,7 +1,6 @@
 <?php
 declare(strict_types=1);
 
-
 $_SESSION["Review text"] = $_POST["comment"];
 $_SESSION["Progress"] = 80;
 
@@ -26,9 +25,10 @@ if (isset($_POST['submit'])) {
     $department->updateDepartmentField();
     $review->updateDepartmentField();
     $rating->updateReviewField();
-
 }
+
 ?>
+
 <form class="form-signin" method="post">
     <?php include "View/header.php" ?>
     <section>

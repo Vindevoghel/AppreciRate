@@ -4,7 +4,6 @@ $_SESSION["Progress"] = 30;
 
 ?>
 
-
 <form class="form-signin" method="post">
     <?php include "View/header.php" ?>
 

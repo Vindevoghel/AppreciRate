@@ -20,7 +20,6 @@ class ManagerController
             }
         }
 
-
         require 'View/Manager.php';
     }
 }

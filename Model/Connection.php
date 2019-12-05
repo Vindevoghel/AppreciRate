@@ -48,5 +48,4 @@ class Connection
         $sql = 'UPDATE AppreciRate.Review SET ' . $_columnName . ' = ' . $_newValue . ' WHERE Company_id = ' . $_condition;
         return $this->pdo->query($sql);
     }
-    
 }

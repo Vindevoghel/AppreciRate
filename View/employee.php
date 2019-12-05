@@ -1,7 +1,8 @@
-<?php $_SESSION["Company value"] = $_POST["company"];
+<?php
+
+$_SESSION["Company value"] = $_POST["company"];
 $_SESSION["Department value"] = $_POST["department"];
 $_SESSION["Progress"] = 50;
-
 
 ?>
 
