@@ -1,19 +1,23 @@
-
 .r_one {
     background-image: url(../Img/icons/1.png);
 }
+
 .r_two {
     background-image: url(../Img/icons/2.png);
 }
+
 .r_three {
     background-image: url(../Img/icons/3.png);
 }
+
 .r_four {
     background-image: url(../Img/icons/4.png);
 }
+
 .r_five {
     background-image: url(../Img/icons/5.png);
 }
+
 .image_radio {
     height: 50px;
     width: 50px;
@@ -26,29 +30,40 @@
     -moz-transition: all 100ms ease-in;
     transition: all 100ms ease-in;
 }
+
 .radioBox input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
-.radioBox input:active + .image_radio {
-    background-color: #c0323b;
-}
-.radioBox input:checked + .image_radio {
-    background-color: #f9da18;
-}
+
 .image_radio:hover {
     -webkit-filter: brightness(1.4);
     filter: brightness(1.4);
-    background-color: #29a395;
+    background-color: #f9da18;
 }
+
 #radiobutton {
     visibility: hidden;
 }
+
 fieldset {
-    margin-top: 20px;
-    border: 2px solid black;
-    border-radius: 12px;
-    min-height: 50px;
-    padding: 20px;
+    max-width: 500px;
+    margin-top: 12px;
+    border: 1px solid #39c;
+    padding: 12px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+input [type=radio] {
+    opacity: 10;
+    z-index: -10;
+    border: none;
+    position: fixed;
+}
+
+input [type=radio] {
+    background-color: #eee;
+    padding: 1em;
+    border: none;
 }
