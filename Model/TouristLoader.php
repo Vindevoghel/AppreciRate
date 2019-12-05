@@ -13,6 +13,5 @@ class TouristLoader
         $sqlnumber = $pdo->query("SELECT max(id_Tourist) FROM Tourist");
         $arrayResult = $sqlnumber->fetch();
         return $arrayResult[0];
-
     }
 }

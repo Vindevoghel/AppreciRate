@@ -28,7 +28,6 @@ for (let company of listAllCompanies) {
 
     company.addEventListener("click", function () {
 
-
         var listAllDepartments = document.getElementsByClassName("department");
         console.log(listAllDepartments);
         for (let department of listAllDepartments) {

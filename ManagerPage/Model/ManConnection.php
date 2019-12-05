@@ -7,7 +7,6 @@ class ManConnection
 
     public function __construct($dbhost, $db, $dbuser, $dbpass)
     {
-
         $pdo = new PDO('mysql:host=' . $dbhost . ';dbname=' . $db, $dbuser, $dbpass);
 
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -15,7 +14,6 @@ class ManConnection
         $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
         $this->pdo = $pdo;
-
     }
 
     public function getReviews()

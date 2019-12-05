@@ -19,7 +19,6 @@ class ManagerController
                 die('You do not have rights to this database.');
             }
         }
-
         require 'View/Manager.php';
     }
 }

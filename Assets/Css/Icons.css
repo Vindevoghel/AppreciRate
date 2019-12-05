@@ -55,6 +55,7 @@ fieldset {
     -moz-border-radius: 8px;
     border-radius: 8px;
 }
+
 input [type=radio] {
     opacity: 10;
     z-index: -10;
