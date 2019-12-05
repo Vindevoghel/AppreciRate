@@ -59,6 +59,5 @@ class ManConnection
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             fputcsv($data, $row);
         }
-
     }
 }
