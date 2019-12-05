@@ -3,11 +3,22 @@
     text-align: center;
 }
 
-h3 {
+h1, h3, h4 {
     font-family: 'Lato', sans-serif;
+    color: #0058a4;
 }
 
-label {
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #f2942e;
+}
+
+#inputName, .list-group-item {
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+}
+
+label, .text-muted, .form-control {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -67,6 +78,7 @@ legend {
         font-size: 3.5rem;
     }
 }
+
 
 .form-signin {
     width: 100%;
