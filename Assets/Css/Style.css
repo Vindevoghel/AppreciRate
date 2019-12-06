@@ -4,6 +4,14 @@
     }
 }
 
+body {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
 .container {
     margin: auto;
     text-align: center;
@@ -26,6 +34,13 @@ p {
 
 label, .text-muted, .form-control {
     font-family: 'Roboto', sans-serif;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
 }
 
 .form-group {
@@ -54,7 +69,7 @@ button {
     min-width: 10rem;
 }
 
-.endpagebutton{
+.endpagebutton {
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 6px;
@@ -83,20 +98,20 @@ legend {
     user-select: none;
 }
 
-.form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
+.radioBox {
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
-body {
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 150px;
-    padding-bottom: 40px;
+.compdept {
+    padding-bottom: 10px;
 }
+
+.employ {
+    padding-bottom: 10px;
+}
+
+
 
 #endsmiley {
     padding-bottom: 30px;

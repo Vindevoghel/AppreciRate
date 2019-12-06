@@ -11,5 +11,4 @@ class RatingController {
         $company = $companyLoader->getCompanyName($_SESSION["Company value"]);
         require "View/rating.php";
     }
-
 }
