@@ -1,3 +1,3 @@
 # AppreciRate
 
-pull request test
+Volunteer project for Close the Gap
