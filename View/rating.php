@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 }
 
 // $_SESSION['Review rating'] = $rating;
-$employee = $_SESSION['employee'];
+//$employee = $_SESSION['employee'];
 $tourist = $_SESSION['Tourist Name'];
 // ik heb in comment geplaats want het overwrite de naam van bedrijf en department
 /*$company = $_SESSION['Company value'];
@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
         </div>
 
         <h3 class="compdept"><?php echo $company . ' - ' . $department ?></h3>
-        <h3 class="employ"><?php echo $employee ?>&nbsp;</h3>
+<!--        <h3 class="employ"><?php /*echo $employee */?>&nbsp;</h3>-->
 
         <fieldset class="echoreview">
             <p><?php echo $review ?></p>

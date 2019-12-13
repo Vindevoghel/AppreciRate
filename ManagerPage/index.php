@@ -1,5 +1,5 @@
 <?php
-require './Model/dbkeys.php';
+//require './Model/dbkeys.php';
 require './Model/ManConnection.php';
 $connection = new ManConnection($dbhost, $db, $dbuser, $dbpass);
 require './Controller/ManagerController.php';

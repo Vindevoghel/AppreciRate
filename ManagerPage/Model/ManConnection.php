@@ -1,5 +1,9 @@
 <?php
 declare(strict_types=1);
+$dbhost = 'localhost';
+$db = 'mydb';
+$dbuser = 'yannick';
+$dbpass = 'Lalala21';
 
 class ManConnection
 {
@@ -7,6 +11,7 @@ class ManConnection
 
     public function __construct($dbhost, $db, $dbuser, $dbpass)
     {
+
         $pdo = new PDO('mysql:host=' . $dbhost . ';dbname=' . $db, $dbuser, $dbpass);
 
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

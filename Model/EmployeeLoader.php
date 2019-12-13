@@ -15,4 +15,13 @@ class EmployeeLoader
         }
         return $arrayEmployees;
     }
+
+    public function getEmployeeName($id)
+    {
+        $connection = new Connection();
+        $pdo = $connection->openConnection();
+        $stmnt = $pdo->query("SELECT Employees-Name FROM Employees WHERE id_Employees = " . $id);
+        $name = $stmnt->fetch();
+        return $name[0];
+    }
 }
