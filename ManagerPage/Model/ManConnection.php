@@ -23,7 +23,8 @@ class ManConnection
 
     public function getReviews()
     {
-        $sql = 'SELECT * FROM mydb.Review JOIN mydb.Department ON Department.id_Department = Review.Department_id_Department
+        $sql = 'SELECT id_Review, Tourist_Name, Employees_Name, Review_text, Review_Rating, Company_Name, Department_Name, Timestamp 
+                FROM mydb.Review JOIN mydb.Department ON Department.id_Department = Review.Department_id_Department
                                           JOIN mydb.Employees ON Employees.id_Employees = Review.Employees_id_Employees
                                           JOIN mydb.Company ON Review.Company_Company_id = Company.Company_id
                                           JOIN mydb.Tourist ON Review.Tourist_id_Tourist = Tourist.id_Tourist

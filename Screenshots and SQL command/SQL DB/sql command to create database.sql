@@ -80,7 +80,7 @@ CREATE TABLE `Employees` (
   PRIMARY KEY (`id_Employees`),
   KEY `fk_Employees_Department1_idx` (`Department_id_Department`),
   CONSTRAINT `fk_Employees_Department1` FOREIGN KEY (`Department_id_Department`) REFERENCES `Department` (`id_Department`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +89,7 @@ CREATE TABLE `Employees` (
 
 LOCK TABLES `Employees` WRITE;
 /*!40000 ALTER TABLE `Employees` DISABLE KEYS */;
-INSERT INTO `Employees` VALUES (2,'Jango',2),(3,'test',3),(4,'Johnny',5),(5,'Filip',2),(6,'Bernardo',2),(7,'Kevin',2);
+INSERT INTO `Employees` VALUES (2,'Jango',2),(3,'test',3),(4,'Johnny',5),(5,'Filip',2),(6,'Bernardo',2),(7,'Kevin',2),(8,'Jeroen',2),(9,'Bona',2),(10,'Koen',2),(11,'Manny',2),(12,'Robin',2),(13,'Mehdi',2),(14,'Barend',2),(15,'Tim',2),(16,'Alaa',2),(17,'Walid',2),(18,'Jan',2);
 /*!40000 ALTER TABLE `Employees` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -104,7 +104,7 @@ CREATE TABLE `Review` (
   `id_Review` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `Review_text` varchar(500) DEFAULT NULL,
   `Review_Rating` varchar(45) DEFAULT NULL,
-  `Timestamp` timestamp(6) NULL DEFAULT current_timestamp(),
+  `Timestamp` datetime DEFAULT current_timestamp(),
   `Employees_id_Employees` int(10) unsigned NOT NULL,
   `Department_id_Department` int(10) unsigned NOT NULL,
   `Company_Company_id` int(10) unsigned NOT NULL,
@@ -118,7 +118,7 @@ CREATE TABLE `Review` (
   CONSTRAINT `fk_Review_Department1` FOREIGN KEY (`Department_id_Department`) REFERENCES `Department` (`id_Department`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_Review_Employees1` FOREIGN KEY (`Employees_id_Employees`) REFERENCES `Employees` (`id_Employees`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_Review_Tourist1` FOREIGN KEY (`Tourist_id_Tourist`) REFERENCES `Tourist` (`id_Tourist`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,7 +127,7 @@ CREATE TABLE `Review` (
 
 LOCK TABLES `Review` WRITE;
 /*!40000 ALTER TABLE `Review` DISABLE KEYS */;
-INSERT INTO `Review` VALUES (2,'terrible','1','2019-11-27 10:46:47.000000',2,2,1,1),(4,'good','5','2019-11-29 09:21:37.000000',3,2,2,1),(6,'not so good','5','2019-12-11 13:31:59.000000',2,2,1,3),(7,'Room was clean','5','2019-12-12 08:19:06.000000',4,5,3,4),(8,'Goede Service','4','2019-12-12 08:40:21.000000',2,2,1,5),(9,'Room was very clean','5','2019-12-12 08:42:48.000000',4,5,3,6),(10,'jfjlsqjlsq','5','2019-12-12 08:46:51.000000',4,5,3,7),(11,'Great job!','5','2020-01-07 08:17:47.000000',4,5,3,8);
+INSERT INTO `Review` VALUES (2,'terrible','1','2019-11-27 11:46:47',2,2,1,1),(4,'good','5','2019-11-29 10:21:37',3,2,2,1),(6,'not so good','5','2019-12-11 14:31:59',2,2,1,3),(7,'Room was clean','5','2019-12-12 09:19:06',4,5,3,4),(8,'Goede Service','4','2019-12-12 09:40:21',2,2,1,5),(9,'Room was very clean','5','2019-12-12 09:42:48',4,5,3,6),(10,'jfjlsqjlsq','5','2019-12-12 09:46:51',4,5,3,7),(11,'Great job!','5','2020-01-07 09:17:47',4,5,3,8),(13,'dzaddzazdd','1','2020-01-07 11:54:01',2,2,1,10),(14,'testing rate','5','2020-01-07 12:00:27',6,2,1,11),(15,'fdsd','2','2020-01-07 13:38:56',5,2,1,12);
 /*!40000 ALTER TABLE `Review` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,7 +142,7 @@ CREATE TABLE `Tourist` (
   `id_Tourist` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `Tourist_Name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_Tourist`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE `Tourist` (
 
 LOCK TABLES `Tourist` WRITE;
 /*!40000 ALTER TABLE `Tourist` DISABLE KEYS */;
-INSERT INTO `Tourist` VALUES (1,'Jef'),(2,'gsd'),(3,'test'),(4,'Jef'),(5,'Jan'),(6,'Tony'),(7,'Tmmy'),(8,'Ricky');
+INSERT INTO `Tourist` VALUES (1,'Jef'),(2,'gsd'),(3,'test'),(4,'Jef'),(5,'Jan'),(6,'Tony'),(7,'Tmmy'),(8,'Ricky'),(9,'Filip'),(10,'aaa'),(11,'testingrate'),(12,'filip');
 /*!40000 ALTER TABLE `Tourist` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -164,4 +164,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-07 10:42:34
+-- Dump completed on 2020-01-07 13:52:22
