@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
     <?php include "View/header.php" ?>
     <section>
         <div class="radioBox text-center">
-            <input type="radio" name="image_radio" value="1" id="radioOne">
+            <input type="radio" name="image_radio" value="1" id="radioOne" required>
             <label class="image_radio r_one" for="radioOne"></label>
             <input type="radio" name="image_radio" value="2" id="radioTwo">
             <label class="image_radio r_two" for="radioTwo"></label>

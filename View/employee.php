@@ -23,7 +23,7 @@ $_SESSION["Progress"] = 50;
         <ul class="list-group pb-2">
             <li class="list-group-item">
                 <input class="form-check-input" name="Selectperson" type="radio"
-                       value="<?php echo $employee->getId() ?>"><?php echo $employee->getName(); ?>
+                       value="<?php echo $employee->getId() ?>" required><?php echo $employee->getName(); ?>
             </li>
         </ul>
     <?php endforeach; ?>

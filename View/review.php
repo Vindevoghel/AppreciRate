@@ -13,7 +13,7 @@ $_SESSION["Progress"] = 75;
             <h3>What's your observation <br/> for this person?</h3>
 
             <div class="form-group pt-3">
-                <textarea class="form-control" rows="5" id="comment" name="comment" maxlength="500"></textarea>
+                <textarea class="form-control" rows="5" id="comment" name="comment" maxlength="500" required></textarea>
             </div>
 
             <button type="submit">Continue</button>
