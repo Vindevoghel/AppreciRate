@@ -34,5 +34,9 @@ Keep in mind !!
 ### Thank you
 ![Thank you](https://raw.githubusercontent.com/Vindevoghel/AppreciRate/39a667d58e7256072813d69a16e9c40f7f81790d/Screenshots%20and%20SQL%20command/Thankyou.png "Thank you")
 
+### About us
+![Thank you](https://raw.githubusercontent.com/Vindevoghel/AppreciRate/master/Screenshots%20and%20SQL%20command/About%20Us.png "About us")
+
 ### Manager
 ![Manager Page](https://raw.githubusercontent.com/Vindevoghel/AppreciRate/master/Screenshots%20and%20SQL%20command/Manager%20Page.png "Manager Page")
+
