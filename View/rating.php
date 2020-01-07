@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
         </div>
 
         <h3 class="compdept"><?php echo $company . ' - ' . $department ?></h3>
-<!--        <h3 class="employ"><?php /*echo $employee */?>&nbsp;</h3>-->
+        <h3 class="employ"><?php echo $employee ?>&nbsp;</h3>
 
         <fieldset class="echoreview">
             <p><?php echo $review ?></p>

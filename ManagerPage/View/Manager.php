@@ -45,7 +45,7 @@
                 <tr>
                     <td><?php echo $row['id_Review'] ?></td>
                     <td><?php echo $row['Tourist_Name'] ?></td>
-                    <td><?php echo $row['Employees-Name'] ?></td>
+                    <td><?php echo $row['Employees_Name'] ?></td>
                     <td><?php echo $row['Review_text'] ?></td>
                     <td><?php echo $row['Review_Rating'] . '/5'?></td>
                     <td><?php echo $row['Company_Name'] ?></td>

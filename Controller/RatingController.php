@@ -10,7 +10,7 @@ class RatingController {
         $departmentLoader = new DepartmentLoader();
         $department = $departmentLoader->getDepartmentName($_SESSION["Department value"]);
         $company = $companyLoader->getCompanyName($_SESSION["Company value"]);
-        //$employee = $employeeLoader->getEmployeeName($_SESSION["employee"]);
+        $employee = $employeeLoader->getEmployeeName($_SESSION["Employee Value"]);
         require "View/rating.php";
     }
 }

@@ -18,12 +18,14 @@ $_SESSION["Progress"] = 50;
 <body>
 <form class="form-signin" method="post">
     <?php include "View/header.php" ?>
+    <h3>Select employee</h3>
     <?php foreach ($employees as $employee): ?>
-    <ul class="list-group pb-2">
-        <li class="list-group-item">
-            <input class="form-check-input" name="Selectperson" type="radio" value="<?php echo $employee->getId()?>"><?php echo $employee->getName();?>
-        </li>
-    </ul>
+        <ul class="list-group pb-2">
+            <li class="list-group-item">
+                <input class="form-check-input" name="Selectperson" type="radio"
+                       value="<?php echo $employee->getId() ?>"><?php echo $employee->getName(); ?>
+            </li>
+        </ul>
     <?php endforeach; ?>
     <div>
         <button type="submit">Continue</button>

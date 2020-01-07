@@ -20,7 +20,7 @@ class EmployeeLoader
     {
         $connection = new Connection();
         $pdo = $connection->openConnection();
-        $stmnt = $pdo->query("SELECT Employees-Name FROM Employees WHERE id_Employees = " . $id);
+        $stmnt = $pdo->query("SELECT Employees_Name FROM Employees WHERE id_Employees = " . $id);
         $name = $stmnt->fetch();
         return $name[0];
     }
