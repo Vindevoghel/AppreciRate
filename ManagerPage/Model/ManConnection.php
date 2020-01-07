@@ -26,7 +26,8 @@ class ManConnection
         $sql = 'SELECT * FROM mydb.Review JOIN mydb.Department ON Department.id_Department = Review.Department_id_Department
                                           JOIN mydb.Employees ON Employees.id_Employees = Review.Employees_id_Employees
                                           JOIN mydb.Company ON Review.Company_Company_id = Company.Company_id
-                                          JOIN mydb.Tourist ON Review.Tourist_id_Tourist = Tourist.id_Tourist';
+                                          JOIN mydb.Tourist ON Review.Tourist_id_Tourist = Tourist.id_Tourist
+                                          ORDER BY id_Review';
         return $this->pdo->query($sql);
     }
 
@@ -36,7 +37,8 @@ class ManConnection
                 FROM mydb.Review JOIN mydb.Department ON Department.id_Department = Review.Department_id_Department
                                           JOIN mydb.Employees ON Employees.id_Employees = Review.Employees_id_Employees
                                           JOIN mydb.Company ON Review.Company_Company_id = Company.Company_id
-                                          JOIN mydb.Tourist ON Review.Tourist_id_Tourist = Tourist.id_Tourist';
+                                          JOIN mydb.Tourist ON Review.Tourist_id_Tourist = Tourist.id_Tourist
+                                          ORDER BY id_Review';
         $stmt = $this->pdo->query($sql);
 
         //Apache must have write permissions to this location

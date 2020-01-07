@@ -111,12 +111,19 @@ legend {
     padding-bottom: 10px;
 }
 
-
-
 #endsmiley {
     padding-bottom: 30px;
 }
 
 .thankyou {
     padding-bottom: 30px;
+}
+
+#vertoverflow {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+#selectemployee {
+    padding-bottom: 20px;
 }
