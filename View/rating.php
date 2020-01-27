@@ -33,19 +33,6 @@ if (isset($_POST['submit'])) {
 <form class="form-signin" method="post">
     <?php include "View/header.php" ?>
     <section>
-        <div class="radioBox text-center">
-            <input type="radio" name="image_radio" value="1" id="radioOne">
-            <label class="image_radio r_one" for="radioOne"></label>
-            <input type="radio" name="image_radio" value="2" id="radioTwo">
-            <label class="image_radio r_two" for="radioTwo"></label>
-            <input type="radio" name="image_radio" value="3" id="radioThree">
-            <label class="image_radio r_three" for="radioThree"></label>
-            <input type="radio" name="image_radio" value="4" id="radioFour">
-            <label class="image_radio r_four" for="radioFour"></label>
-            <input type="radio" name="image_radio" value="5" id="radioFive">
-            <label class="image_radio r_five" for="radioFive"></label>
-        </div>
-
         <h3 class="compdept"><?php echo $company . ' - ' . $department ?></h3>
         <h3 class="employ"><?php echo $employee ?>&nbsp;</h3>
 
