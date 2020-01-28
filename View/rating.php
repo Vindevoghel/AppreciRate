@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
 
+
+
+$_SESSION["Smiley Value"] = $_POST["image_radio"];
 $_SESSION["Review text"] = $_POST["comment"];
 $_SESSION["Progress"] = 80;
 
@@ -18,6 +21,27 @@ $tourist = $_SESSION['Tourist Name'];
 /*$company = $_SESSION['Company value'];
 $department = $_SESSION['Department value'];*/
 $review = $_SESSION['Review text'];
+$smileyvalue = $_SESSION['Smiley Value'];
+
+$smileyimage = "";
+
+
+if ($smileyvalue === '1') {
+    $smileyimage = 'r_one';
+
+}elseif ($smileyvalue === '2'){
+    $smileyimage = 'r_two';
+}
+elseif ($smileyvalue === '3'){
+    $smileyimage = 'r_three';
+}
+elseif ($smileyvalue === '4'){
+    $smileyimage = 'r_four';
+}
+elseif ($smileyvalue === '5'){
+    $smileyimage = 'r_five';
+}
+
 
 if (isset($_POST['submit'])) {
 
@@ -34,20 +58,15 @@ if (isset($_POST['submit'])) {
     <?php include "View/header.php" ?>
     <section>
         <div class="radioBox text-center">
-            <input type="radio" name="image_radio" value="1" id="radioOne" required>
-            <label class="image_radio r_one" for="radioOne"></label>
-            <input type="radio" name="image_radio" value="2" id="radioTwo">
-            <label class="image_radio r_two" for="radioTwo"></label>
-            <input type="radio" name="image_radio" value="3" id="radioThree">
-            <label class="image_radio r_three" for="radioThree"></label>
-            <input type="radio" name="image_radio" value="4" id="radioFour">
-            <label class="image_radio r_four" for="radioFour"></label>
-            <input type="radio" name="image_radio" value="5" id="radioFive">
-            <label class="image_radio r_five" for="radioFive"></label>
+            <input  type="radio" name="image_radio" value="<?php echo $smileyvalue?>" id="radioOne" required checked>
+            <label class="image_radio <?php echo $smileyimage?>" for="radioOne"></label>
         </div>
 
         <h3 class="compdept"><?php echo $company . ' - ' . $department ?></h3>
         <h3 class="employ"><?php echo $employee ?>&nbsp;</h3>
+
+
+
 
         <fieldset class="echoreview">
             <p><?php echo $review ?></p>
