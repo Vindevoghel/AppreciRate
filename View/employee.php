@@ -1,5 +1,5 @@
 <?php
-
+$_SESSION["Employee Value"] = $_POST["Selectperson"];
 $_SESSION["Company value"] = $_POST["company"];
 $_SESSION["Department value"] = $_POST["department"];
 $_SESSION["Progress"] = 50;
